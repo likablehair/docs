@@ -1,0 +1,19 @@
+{
+  "name": "documentation",
+  "version": "0.0.1",
+  "description": "docs template",
+  "main": "index.js",
+  "authors": {
+    "name": "likablehair",
+    "email": "likablehair@gmail.com"
+  },
+  "repository": "documentation/documentation",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
