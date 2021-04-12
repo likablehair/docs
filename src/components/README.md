@@ -6,7 +6,43 @@ sidebar: auto
 
 ## Type of Props
 
-#### Props Style
+### Props Data
+
+| Name     |   Type   | Default |
+| -------- | :------: | :-----: |
+| username | `String` |    -    |
+| password | `String` |    -    |
+
+    props : {
+        username : {
+             type : String,
+             default: "Username"
+        },
+        password : {
+             type : String,
+             default: 'Password'
+        },
+    }
+
+### Props Design
+
+| Name          |   Type   |    Default    |
+| ------------- | :------: | :-----------: |
+| usernameLabel | `String` | Type Username |
+| passwordLabel | `String` | Type Password |
+
+    props : {
+        usernameLabel : {
+             type : String,
+             default: 'Type Username'
+        },
+        passwordLabel : {
+             type : String,
+             default: 'Type Password'
+        },
+    }
+
+### Props Style
 
 | Name                 |   Type    | Default |
 | -------------------- | :-------: | :-----: |
@@ -55,7 +91,7 @@ sidebar: auto
         },
     }
 
-#### Props Validation - E.g. EmailValidation
+### Props Validation - E.g. EmailValidation
 
 | Name              |   Type    |    Default     |
 | ----------------- | :-------: | :------------: |
@@ -78,7 +114,7 @@ sidebar: auto
         },
     }
 
-#### Props Button
+### Props Button
 
 | Name                 |   Type    | Default  |
 | -------------------- | :-------: | :------: |
@@ -108,6 +144,7 @@ sidebar: auto
              }
         },
     }
-#### Props List
 
-#### Props Table
+### Props List
+
+### Props Table
