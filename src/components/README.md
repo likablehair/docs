@@ -6,6 +6,12 @@ sidebar: auto
 
 ## Type of Props
 
+::: tip Default Props
+Below you can find some props
+:::
+
+<hr/>
+
 ### Props Data
 
 | Name     |   Type   | Default |
@@ -13,7 +19,10 @@ sidebar: auto
 | username | `String` |    -    |
 | password | `String` |    -    |
 
-    props : {
+::: details View Code - Data Props
+
+```js
+     props : {
         username : {
              type : String,
              default: "Username"
@@ -23,6 +32,11 @@ sidebar: auto
              default: 'Password'
         },
     }
+```
+
+:::
+
+<hr/>
 
 ### Props Design
 
@@ -31,6 +45,9 @@ sidebar: auto
 | usernameLabel | `String` | Type Username |
 | passwordLabel | `String` | Type Password |
 
+::: details View Code - Design Props
+
+```js
     props : {
         usernameLabel : {
              type : String,
@@ -41,6 +58,11 @@ sidebar: auto
              default: 'Type Password'
         },
     }
+```
+
+:::
+
+<hr/>
 
 ### Props Style
 
@@ -56,6 +78,9 @@ sidebar: auto
 | disabled             | `Boolean` |  false  |
 | disabledWhenNotValid | `Boolean` |  false  |
 
+::: details View Code - Style Props
+
+```js
     props : {
         flat : {
              type : Boolean,
@@ -90,6 +115,52 @@ sidebar: auto
              default: false
         },
     }
+```
+
+:::
+
+<hr/>
+
+### Props Styles & Classes
+
+| Name    |   Type   | Default |
+| ------- | :------: | :-----: |
+| styles  | `Object` |   {}    |
+| classes | `Object` |   {}    |
+
+::: details View Code - Styles & Classes Props
+
+```js
+    props : {
+       styles: {
+            type: Object,
+            default: function () {
+                 return {
+                   username: {},
+                   email: {},
+                   password: {},
+                   confirmPassword: {},
+                   signUpButton: {},
+                 };
+            },
+       classes: {
+            type: Object,
+            default: function () {
+                 return {
+                   username: {},
+                   email: {},
+                   password: {},
+                   confirmPassword: {},
+                   signUpButton: {},
+                 };
+            },
+      },
+    }
+```
+
+:::
+
+<hr/>
 
 ### Props Validation - E.g. EmailValidation
 
@@ -99,6 +170,9 @@ sidebar: auto
 | requiredMessage   | `String`  |    Required    |
 | notAnEmailMessage | `String`  | Invalid e-mail |
 
+::: details View Code - Validation Props
+
+```js
     props : {
         emailValidation : {
              type : Boolean,
@@ -113,6 +187,11 @@ sidebar: auto
              default: 'Invalid e-mail'
         },
     }
+```
+
+:::
+
+<hr/>
 
 ### Props Button
 
@@ -123,6 +202,9 @@ sidebar: auto
 | loginButtonOutlined  | `Boolean` |  false   |
 | loginButtonAlignment | `String`  |  center  |
 
+::: details View Code - Botton Props
+
+```js
     props : {
         loginButtonColor : {
              type : String,
@@ -144,7 +226,16 @@ sidebar: auto
              }
         },
     }
+```
+
+:::
+
+<hr/>
 
 ### Props List
 
+<hr/>
+
 ### Props Table
+
+<hr/>
