@@ -12,13 +12,13 @@ module.exports = {
       { name: "apple-mobile-web-app-status-bar-style", content: "black" },
     ],
   ],
-
   themeConfig: {
     repo: "",
     editLinks: false,
     docsDir: "",
     editLinkText: "",
     lastUpdated: false,
+    smoothScroll: true,
     nav: [
       {
         text: "Guide",
@@ -38,7 +38,6 @@ module.exports = {
         {
           title: "Guide",
           collapsable: true,
-          children: ["", "using-vue"],
         },
       ],
       "/components/": [
