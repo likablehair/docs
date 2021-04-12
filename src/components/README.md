@@ -6,6 +6,8 @@ sidebar: auto
 
 ## login-form
 
+<!-- <vuetify-LoginForm/> -->
+
 - Type: `string`
 - Default: `/`
 

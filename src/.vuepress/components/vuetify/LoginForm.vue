@@ -6,6 +6,7 @@
       login-button-block
       login-button-outlined
       clearable
+      :style="this.style"
     />
   </div>
 </template>
@@ -18,7 +19,10 @@ export default {
   name: 'Login',
   components: {
     LoginFormComponent,
-  }
+  },
+  data: () => ({
+    style :{ width:'300px'}
+  }),
 }
 </script>
 

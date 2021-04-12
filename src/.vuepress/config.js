@@ -48,6 +48,13 @@ module.exports = {
           children: ["", "component-list"],
         },
       ],
+      "/api/": [
+        {
+          title: "API",
+          collapsable: true,
+          children: ["", "api-list"],
+        },
+      ],
     },
     
   },
