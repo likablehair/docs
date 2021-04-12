@@ -1,4 +1,4 @@
-# Frontend Docs
+#  Docs
 
 ## Browser API Access Restrictions
 

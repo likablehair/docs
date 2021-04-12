@@ -5,7 +5,7 @@ tagline: docs template
 actionText: Quick Start →
 actionLink: /guide/
 features:
-- title: FrontEnd
+- title: Components
   details: Go to Docs ->
 - title: BackEnd
   details: Go to Docs ->

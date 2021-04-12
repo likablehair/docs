@@ -2,14 +2,13 @@
 sidebar: auto
 ---
 
-# Config
+# Components
 
-## foo
-
-- Type: `string`
-- Default: `/`
-
-## bar
+## login-form
 
 - Type: `string`
 - Default: `/`
+
+
+
+
