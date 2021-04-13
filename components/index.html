@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Components | PG Docs Guide</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="docs template">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.ac3e508f.css" as="style"><link rel="preload" href="/docs/assets/js/app.4c58fd8f.js" as="script"><link rel="preload" href="/docs/assets/js/2.dd94a5c0.js" as="script"><link rel="preload" href="/docs/assets/js/8.c513a755.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.f4a85f47.js"><link rel="prefetch" href="/docs/assets/js/11.def278d4.js"><link rel="prefetch" href="/docs/assets/js/3.a7b6586f.js"><link rel="prefetch" href="/docs/assets/js/4.9b6d4d19.js"><link rel="prefetch" href="/docs/assets/js/5.d0662f3e.js"><link rel="prefetch" href="/docs/assets/js/6.58addb6c.js"><link rel="prefetch" href="/docs/assets/js/7.adb90023.js"><link rel="prefetch" href="/docs/assets/js/9.1c4a75e2.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.ac3e508f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">PG Docs Guide</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/docs/components/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Component
+</a></div><div class="nav-item"><a href="/docs/api/" class="nav-link">
+  API
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/docs/components/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Component
+</a></div><div class="nav-item"><a href="/docs/api/" class="nav-link">
+  API
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Components</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/components/#type-of-props" class="sidebar-link">Type of Props</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/components/#props-data" class="sidebar-link">Props Data</a></li><li class="sidebar-sub-header"><a href="/docs/components/#props-design" class="sidebar-link">Props Design</a></li><li class="sidebar-sub-header"><a href="/docs/components/#props-style" class="sidebar-link">Props Style</a></li><li class="sidebar-sub-header"><a href="/docs/components/#props-styles-classes" class="sidebar-link">Props Styles &amp; Classes</a></li><li class="sidebar-sub-header"><a href="/docs/components/#props-validation-e-g-emailvalidation" class="sidebar-link">Props Validation - E.g. EmailValidation</a></li><li class="sidebar-sub-header"><a href="/docs/components/#props-button" class="sidebar-link">Props Button</a></li><li class="sidebar-sub-header"><a href="/docs/components/#props-list" class="sidebar-link">Props List</a></li><li class="sidebar-sub-header"><a href="/docs/components/#props-table" class="sidebar-link">Props Table</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="components"><a href="#components" class="header-anchor">#</a> Components</h1> <h2 id="type-of-props"><a href="#type-of-props" class="header-anchor">#</a> Type of Props</h2> <div class="custom-block tip"><p class="custom-block-title">Default Props</p> <p>Below you can find some props</p></div> <hr> <h3 id="props-data"><a href="#props-data" class="header-anchor">#</a> Props Data</h3> <table><thead><tr><th>Name</th> <th style="text-align:center;">Type</th> <th style="text-align:center;">Default</th></tr></thead> <tbody><tr><td>username</td> <td style="text-align:center;"><code>String</code></td> <td style="text-align:center;">-</td></tr> <tr><td>password</td> <td style="text-align:center;"><code>String</code></td> <td style="text-align:center;">-</td></tr></tbody></table> <details class="custom-block details"><summary>View Code - Data Props</summary> <div class="language-js extra-class"><pre class="language-js"><code>     props <span class="token operator">:</span> <span class="token punctuation">{</span>
+        username <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> String<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;Username&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        password <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> String<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'Password'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></details> <hr> <h3 id="props-design"><a href="#props-design" class="header-anchor">#</a> Props Design</h3> <table><thead><tr><th>Name</th> <th style="text-align:center;">Type</th> <th style="text-align:center;">Default</th></tr></thead> <tbody><tr><td>usernameLabel</td> <td style="text-align:center;"><code>String</code></td> <td style="text-align:center;">Type Username</td></tr> <tr><td>passwordLabel</td> <td style="text-align:center;"><code>String</code></td> <td style="text-align:center;">Type Password</td></tr></tbody></table> <details class="custom-block details"><summary>View Code - Design Props</summary> <div class="language-js extra-class"><pre class="language-js"><code>    props <span class="token operator">:</span> <span class="token punctuation">{</span>
+        usernameLabel <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> String<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'Type Username'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        passwordLabel <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> String<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'Type Password'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></details> <hr> <h3 id="props-style"><a href="#props-style" class="header-anchor">#</a> Props Style</h3> <table><thead><tr><th>Name</th> <th style="text-align:center;">Type</th> <th style="text-align:center;">Default</th></tr></thead> <tbody><tr><td>flat</td> <td style="text-align:center;"><code>Boolean</code></td> <td style="text-align:center;">false</td></tr> <tr><td>solo</td> <td style="text-align:center;"><code>Boolean</code></td> <td style="text-align:center;">false</td></tr> <tr><td>dense</td> <td style="text-align:center;"><code>Boolean</code></td> <td style="text-align:center;">false</td></tr> <tr><td>filled</td> <td style="text-align:center;"><code>Boolean</code></td> <td style="text-align:center;">false</td></tr> <tr><td>color</td> <td style="text-align:center;"><code>String</code></td> <td style="text-align:center;">primary</td></tr> <tr><td>soloInverted</td> <td style="text-align:center;"><code>Boolean</code></td> <td style="text-align:center;">false</td></tr> <tr><td>clearable</td> <td style="text-align:center;"><code>Boolean</code></td> <td style="text-align:center;">false</td></tr> <tr><td>disabled</td> <td style="text-align:center;"><code>Boolean</code></td> <td style="text-align:center;">false</td></tr> <tr><td>disabledWhenNotValid</td> <td style="text-align:center;"><code>Boolean</code></td> <td style="text-align:center;">false</td></tr></tbody></table> <details class="custom-block details"><summary>View Code - Style Props</summary> <div class="language-js extra-class"><pre class="language-js"><code>    props <span class="token operator">:</span> <span class="token punctuation">{</span>
+        flat <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        solo <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        dense <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        filled <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        color <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        soloInverted <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        disabled <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        disabledWhenNotValid <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></details> <hr> <h3 id="props-styles-classes"><a href="#props-styles-classes" class="header-anchor">#</a> Props Styles &amp; Classes</h3> <table><thead><tr><th>Name</th> <th style="text-align:center;">Type</th> <th style="text-align:center;">Default</th></tr></thead> <tbody><tr><td>styles</td> <td style="text-align:center;"><code>Object</code></td> <td style="text-align:center;">{}</td></tr> <tr><td>classes</td> <td style="text-align:center;"><code>Object</code></td> <td style="text-align:center;">{}</td></tr></tbody></table> <details class="custom-block details"><summary>View Code - Styles &amp; Classes Props</summary> <div class="language-js extra-class"><pre class="language-js"><code>    props <span class="token operator">:</span> <span class="token punctuation">{</span>
+       styles<span class="token operator">:</span> <span class="token punctuation">{</span>
+            type<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+            <span class="token function-variable function">default</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                 <span class="token keyword">return</span> <span class="token punctuation">{</span>
+                   username<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                   email<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                   password<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                   confirmPassword<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                   signUpButton<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                 <span class="token punctuation">}</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+       classes<span class="token operator">:</span> <span class="token punctuation">{</span>
+            type<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+            <span class="token function-variable function">default</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                 <span class="token keyword">return</span> <span class="token punctuation">{</span>
+                   username<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                   email<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                   password<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                   confirmPassword<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                   signUpButton<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                 <span class="token punctuation">}</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></details> <hr> <h3 id="props-validation-e-g-emailvalidation"><a href="#props-validation-e-g-emailvalidation" class="header-anchor">#</a> Props Validation - E.g. EmailValidation</h3> <table><thead><tr><th>Name</th> <th style="text-align:center;">Type</th> <th style="text-align:center;">Default</th></tr></thead> <tbody><tr><td>emailValidation</td> <td style="text-align:center;"><code>Boolean</code></td> <td style="text-align:center;">false</td></tr> <tr><td>requiredMessage</td> <td style="text-align:center;"><code>String</code></td> <td style="text-align:center;">Required</td></tr> <tr><td>notAnEmailMessage</td> <td style="text-align:center;"><code>String</code></td> <td style="text-align:center;">Invalid e-mail</td></tr></tbody></table> <details class="custom-block details"><summary>View Code - Validation Props</summary> <div class="language-js extra-class"><pre class="language-js"><code>    props <span class="token operator">:</span> <span class="token punctuation">{</span>
+        emailValidation <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        requiredMessage <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> String<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'Required'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        notAnEmailMessage <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> String<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'Invalid e-mail'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></details> <hr> <h3 id="props-button"><a href="#props-button" class="header-anchor">#</a> Props Button</h3> <table><thead><tr><th>Name</th> <th style="text-align:center;">Type</th> <th style="text-align:center;">Default</th></tr></thead> <tbody><tr><td>loginButtonColor</td> <td style="text-align:center;"><code>String</code></td> <td style="text-align:center;">Required</td></tr> <tr><td>loginButtonBlock</td> <td style="text-align:center;"><code>Boolean</code></td> <td style="text-align:center;">false</td></tr> <tr><td>loginButtonOutlined</td> <td style="text-align:center;"><code>Boolean</code></td> <td style="text-align:center;">false</td></tr> <tr><td>loginButtonAlignment</td> <td style="text-align:center;"><code>String</code></td> <td style="text-align:center;">center</td></tr></tbody></table> <details class="custom-block details"><summary>View Code - Botton Props</summary> <div class="language-js extra-class"><pre class="language-js"><code>    props <span class="token operator">:</span> <span class="token punctuation">{</span>
+        loginButtonColor <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> String<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'Required'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        loginButtonBlock <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type <span class="token operator">:</span> String<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'Invalid e-mail'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        loginButtonBlock<span class="token operator">:</span> <span class="token punctuation">{</span>
+          type <span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+          <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span>
+        loginButtonAlignment <span class="token operator">:</span> <span class="token punctuation">{</span>
+             type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+             <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+             <span class="token function-variable function">validator</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+               <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token string">'left'</span><span class="token punctuation">,</span> <span class="token string">'center'</span><span class="token punctuation">,</span> <span class="token string">'right'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span>
+             <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></details> <hr> <h3 id="props-list"><a href="#props-list" class="header-anchor">#</a> Props List</h3> <hr> <h3 id="props-table"><a href="#props-table" class="header-anchor">#</a> Props Table</h3> <hr></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.4c58fd8f.js" defer></script><script src="/docs/assets/js/2.dd94a5c0.js" defer></script><script src="/docs/assets/js/8.c513a755.js" defer></script>
+  </body>
+</html>

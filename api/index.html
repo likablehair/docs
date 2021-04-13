@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>API | PG Docs Guide</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="docs template">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.ac3e508f.css" as="style"><link rel="preload" href="/docs/assets/js/app.4c58fd8f.js" as="script"><link rel="preload" href="/docs/assets/js/2.dd94a5c0.js" as="script"><link rel="preload" href="/docs/assets/js/7.adb90023.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.f4a85f47.js"><link rel="prefetch" href="/docs/assets/js/11.def278d4.js"><link rel="prefetch" href="/docs/assets/js/3.a7b6586f.js"><link rel="prefetch" href="/docs/assets/js/4.9b6d4d19.js"><link rel="prefetch" href="/docs/assets/js/5.d0662f3e.js"><link rel="prefetch" href="/docs/assets/js/6.58addb6c.js"><link rel="prefetch" href="/docs/assets/js/8.c513a755.js"><link rel="prefetch" href="/docs/assets/js/9.1c4a75e2.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.ac3e508f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">PG Docs Guide</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/docs/components/" class="nav-link">
+  Component
+</a></div><div class="nav-item"><a href="/docs/api/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  API
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/docs/components/" class="nav-link">
+  Component
+</a></div><div class="nav-item"><a href="/docs/api/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  API
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>API</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/api/#users" class="sidebar-link">Users</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/api/#users-create" class="sidebar-link">/users/create</a></li><li class="sidebar-sub-header"><a href="/docs/api/#users-login" class="sidebar-link">/users/login</a></li><li class="sidebar-sub-header"><a href="/docs/api/#users-logout" class="sidebar-link">/users/logout</a></li><li class="sidebar-sub-header"><a href="/docs/api/#users-list" class="sidebar-link">/users/list</a></li><li class="sidebar-sub-header"><a href="/docs/api/#users-update" class="sidebar-link">/users/update</a></li><li class="sidebar-sub-header"><a href="/docs/api/#users-me" class="sidebar-link">/users/me</a></li><li class="sidebar-sub-header"><a href="/docs/api/#users-destroy" class="sidebar-link">/users/destroy</a></li></ul></li><li><a href="/docs/api/#groups" class="sidebar-link">Groups</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="api"><a href="#api" class="header-anchor">#</a> API</h1> <h2 id="users"><a href="#users" class="header-anchor">#</a> Users</h2> <h3 id="users-create"><a href="#users-create" class="header-anchor">#</a> /users/create</h3> <ul><li>Type: <code>POST</code></li> <li>Infos:</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Request body</span>
+<span class="token punctuation">{</span>
+  firstname<span class="token operator">:</span> <span class="token string">'user firstname'</span><span class="token punctuation">,</span>
+  lastname<span class="token operator">:</span> <span class="token string">'user lastname'</span><span class="token punctuation">,</span>
+  email<span class="token operator">:</span> <span class="token string">'user email'</span><span class="token punctuation">,</span>
+  password<span class="token operator">:</span> <span class="token string">'user clear password'</span><span class="token punctuation">,</span>
+  enabled<span class="token operator">:</span> <span class="token string">'Boolean, if user is enabled to login'</span><span class="token punctuation">,</span>
+  system<span class="token operator">:</span> <span class="token string">'Boolean, if user is system'</span><span class="token punctuation">,</span>
+  groups<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span> <span class="token comment">// groups id</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Success Response</span>
+<span class="token punctuation">{</span>
+  success<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  results<span class="token operator">:</span> <span class="token punctuation">{</span>
+    id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token comment">// user object</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Error Response</span>
+<span class="token punctuation">{</span>
+  success<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  results<span class="token operator">:</span> <span class="token punctuation">{</span>
+    error<span class="token operator">:</span> <span class="token string">&quot;error title&quot;</span><span class="token punctuation">,</span>
+    message<span class="token operator">:</span> <span class="token string">&quot;error message&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">Avatar</p> <p>the request takes an avatar file</p></div> <h3 id="users-login"><a href="#users-login" class="header-anchor">#</a> /users/login</h3> <ul><li>Type: <code>POST</code></li> <li>Infos:</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Request body</span>
+<span class="token punctuation">{</span>
+  user<span class="token operator">:</span> <span class="token punctuation">{</span>
+    email<span class="token operator">:</span> <span class="token string">'required'</span><span class="token punctuation">,</span>
+    password<span class="token operator">:</span> <span class="token string">'required'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Success response</span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;success&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;auth-token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;token, to send each subsequent request&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;user-id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;user's id, to send each subsequent request&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;token-max-age&quot;</span><span class="token operator">:</span> <span class="token string">&quot;days within token expiration&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="users-logout"><a href="#users-logout" class="header-anchor">#</a> /users/logout</h3> <ul><li>Type: <code>POST</code></li> <li>Infos:</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Request body</span>
+<span class="token punctuation">{</span> <span class="token punctuation">}</span>
+
+<span class="token comment">// Success response</span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;success&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="users-list"><a href="#users-list" class="header-anchor">#</a> /users/list</h3> <ul><li>Description: returns the list of users, exclude system users</li> <li>Type: <code>GET</code></li> <li>Infos:</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Request params</span>
+<span class="token punctuation">{</span> 
+  page<span class="token operator">:</span> <span class="token string">'page number'</span>
+  row_per_page<span class="token operator">:</span> <span class="token string">'number of rows for page'</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Success response</span>
+<span class="token punctuation">{</span>
+  success<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  results<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      id<span class="token operator">:</span> <span class="token string">'user id'</span><span class="token punctuation">,</span> 
+      email<span class="token operator">:</span> <span class="token string">'user email '</span><span class="token punctuation">,</span> 
+      firstname<span class="token operator">:</span> <span class="token string">'user firstname'</span><span class="token punctuation">,</span> 
+      lastname<span class="token operator">:</span> <span class="token string">'user lastname'</span><span class="token punctuation">,</span> 
+      birthday<span class="token operator">:</span> <span class="token string">'user birthday'</span><span class="token punctuation">,</span> 
+      avatar<span class="token operator">:</span> <span class="token string">'user avar url'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Error Response</span>
+<span class="token punctuation">{</span>
+  success<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  results<span class="token operator">:</span> <span class="token punctuation">{</span>
+    error<span class="token operator">:</span> <span class="token string">&quot;error title&quot;</span><span class="token punctuation">,</span>
+    message<span class="token operator">:</span> <span class="token string">&quot;error message&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="users-update"><a href="#users-update" class="header-anchor">#</a> /users/update</h3> <ul><li>Description: update user informations</li> <li>Type: <code>POST</code></li> <li>Infos:</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Request params</span>
+<span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token string">'user id'</span>
+  firstname<span class="token operator">:</span> <span class="token string">'user firstname'</span><span class="token punctuation">,</span>
+  lastname<span class="token operator">:</span> <span class="token string">'user lastname'</span><span class="token punctuation">,</span>
+  email<span class="token operator">:</span> <span class="token string">'user email'</span><span class="token punctuation">,</span>
+  password<span class="token operator">:</span> <span class="token string">'user clear password'</span><span class="token punctuation">,</span>
+  enabled<span class="token operator">:</span> <span class="token string">'Boolean, if user is enabled to login'</span><span class="token punctuation">,</span>
+  system<span class="token operator">:</span> <span class="token string">'Boolean, if user is system'</span><span class="token punctuation">,</span>
+  groups<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span> <span class="token comment">// groups id</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Success response</span>
+<span class="token punctuation">{</span>
+  success<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  id<span class="token operator">:</span> <span class="token string">'user id'</span><span class="token punctuation">,</span> 
+  email<span class="token operator">:</span> <span class="token string">'user email '</span><span class="token punctuation">,</span> 
+  firstname<span class="token operator">:</span> <span class="token string">'user firstname'</span><span class="token punctuation">,</span> 
+  lastname<span class="token operator">:</span> <span class="token string">'user lastname'</span><span class="token punctuation">,</span> 
+  birthday<span class="token operator">:</span> <span class="token string">'user birthday'</span><span class="token punctuation">,</span> 
+  avatar<span class="token operator">:</span> <span class="token string">'user avar url'</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Error Response</span>
+<span class="token punctuation">{</span>
+  success<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  results<span class="token operator">:</span> <span class="token punctuation">{</span>
+    error<span class="token operator">:</span> <span class="token string">&quot;error title&quot;</span><span class="token punctuation">,</span>
+    message<span class="token operator">:</span> <span class="token string">&quot;error message&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="users-me"><a href="#users-me" class="header-anchor">#</a> /users/me</h3> <ul><li>Description: get my user informations</li> <li>Type: <code>GET</code></li> <li>Infos:</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Request params</span>
+<span class="token punctuation">{</span> <span class="token punctuation">}</span>
+
+<span class="token comment">// Success response</span>
+<span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token string">'user id'</span><span class="token punctuation">,</span>
+  firstname<span class="token operator">:</span> <span class="token string">'user firstname'</span><span class="token punctuation">,</span>
+  lastname<span class="token operator">:</span> <span class="token string">'user lastname'</span><span class="token punctuation">,</span>
+  email<span class="token operator">:</span> <span class="token string">'user email'</span><span class="token punctuation">,</span>
+  system<span class="token operator">:</span> <span class="token string">'Boolean, if user is system'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="users-destroy"><a href="#users-destroy" class="header-anchor">#</a> /users/destroy</h3> <ul><li>Description: destroy user</li> <li>Type: <code>POST</code></li> <li>Infos:</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Request params</span>
+<span class="token punctuation">{</span> 
+  id<span class="token operator">:</span> <span class="token string">&quot;user to destroy id&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Success response</span>
+<span class="token punctuation">{</span>
+  success<span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Error Response</span>
+<span class="token punctuation">{</span>
+  success<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  results<span class="token operator">:</span> <span class="token punctuation">{</span>
+    error<span class="token operator">:</span> <span class="token string">&quot;error title&quot;</span><span class="token punctuation">,</span>
+    message<span class="token operator">:</span> <span class="token string">&quot;error message&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="groups"><a href="#groups" class="header-anchor">#</a> Groups</h2></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.4c58fd8f.js" defer></script><script src="/docs/assets/js/2.dd94a5c0.js" defer></script><script src="/docs/assets/js/7.adb90023.js" defer></script>
+  </body>
+</html>
